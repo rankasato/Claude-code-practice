@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はじめてのウェブページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ようこそ!</h1>
+    <p>これは初心者向けのシンプルなウェブページです。</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>このページについて</h2>
+      <p>
+        HTMLとCSSだけで作られた、とてもシンプルなページです。
+        HTMLは「文章や画像などの中身」を作り、CSSは「見た目のデザイン」を担当します。
+      </p>
+    </section>
+
+    <section>
+      <h2>試してみよう</h2>
+      <p>下のボタンを押すと、メッセージが表示されます。</p>
+      <button id="greet-button">クリックしてね</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 はじめてのウェブページ</p>
+  </footer>
+
+  <script>
+    const button = document.getElementById('greet-button');
+    const message = document.getElementById('message');
+
+    button.addEventListener('click', () => {
+      message.textContent = 'こんにちは!ボタンが押されました。';
+    });
+  </script>
+
+</body>
+</html>
